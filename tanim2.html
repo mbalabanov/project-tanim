@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marin Comics</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="canonical" href="https://marincomics.com/project-tanim/tanim2.html" />
+    <link
+      rel="canonical"
+      href="https://marincomics.com/project-tanim/tanim2.html"
+    />
     <meta
       property="og:title"
       content="Section section of the graphic novel Tanim"
@@ -41,35 +44,71 @@
 
   <body class="bg-dark text-light">
     <nav
-      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+      class="navbar navbar-expand-lg bg-primary bg-gradient"
+      data-bs-theme="dark"
     >
-      <a
-        href="https://marincomics.com"
-        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
-      >
-        <img src="../img/marincomics-logo.png" alt="Marin Comics" height="50" />
-      </a>
-
-      <ul class="nav nav-pills me-4">
-        <li class="nav-item">
-          <a href="/index.html" class="nav-link link-light">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/writing.html" class="nav-link link-light">Writing</a>
-        </li>
-        <li class="nav-item">
-          <a href="/dev.html" class="nav-link link-light">Dev</a>
-        </li>
-        <li class="nav-item">
-          <a href="/videos.html" class="nav-link link-light">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a href="/comics.html" class="nav-link link-light">Comics</a>
-        </li>
-        <li class="nav-item">
-          <a href="/about.html" class="nav-link link-light">About</a>
-        </li>
-      </ul>
+      <div class="container">
+        <a class="navbar-brand" href="https://marincomics.com"
+          ><img
+            src="https://marincomics.com/img/marincomics-logo-sm.png"
+            alt="Marin Comics"
+            width="200px"
+            class="mt-2"
+        /></a>
+        <button
+          class="navbar-toggler text-white border-white bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMarinComics"
+          aria-controls="navbarMarinComics"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMarinComics">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/writing.html"
+                >Writing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/dev.html"
+                >Dev</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/comics.html"
+                >Comics</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/about.html"
+                >About</a
+              >
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline-light" onclick="triggerSearch()"
+            >Search Site</a
+          >
+        </div>
+      </div>
     </nav>
 
     <main class="container">
@@ -1648,26 +1687,32 @@
       });
     </script>
 
-    <footer class="bg-black text-muted p-5 row">
-      <div class="col-md-6 text-center">
-        <p class="mb-1">
-          Showcase of side projects, videos and writing about comics, computer
-          history and development.
-        </p>
-      </div>
-      <div class="col-md-3 text-center">
-        <p class="mb-1">
-          <a href="#" class="btn btn-sm btn-outline-secondary">Back to top</a>
-        </p>
-      </div>
-      <div class="col-md-3 text-center">
-        <p class="mb-1">
-          <a
-            href="https://marincomics.com/privacy-policy.html"
-            class="btn btn-sm btn-outline-light"
-            >Privacy Policy</a
-          >
-        </p>
+    <footer class="bg-dark text-muted p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p class="mb-1">
+              Showcase of side projects, videos and writing about the demoscene,
+              comics, computer history and development.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a href="#" class="btn btn-sm btn-outline-secondary"
+                >Back to top</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a
+                href="/privacy-policy.html"
+                class="btn btn-sm btn-outline-light"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
